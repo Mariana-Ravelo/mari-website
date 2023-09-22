@@ -26,9 +26,7 @@ function App() {
   return (
   <>
     <Navbar />
-    <div className="container">
-    <Component />
-    </div>
+    <div className="container"><Component /></div>
   </>
   )
 }
