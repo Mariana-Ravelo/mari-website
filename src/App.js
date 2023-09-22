@@ -3,30 +3,20 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
-  let Component
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home
-      break
-    case "/about":
-      Component = About
-      break
-    case "/projects": 
-      Component = Projects
-      break
-    case "/contact":
-      Component = Contact
-      break
-    default:
-      Component = Home
-      break
-  }
   return (
   <>
     <Navbar />
-    <div className="container"><Component /></div>
+    <div className="container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
   </>
   )
 }
