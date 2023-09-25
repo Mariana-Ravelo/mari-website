@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background: linear-gradient(to left, #ffffff, #d7e1ec);
 }
 
 .container {
@@ -51,3 +52,56 @@ body {
     background-color: #777;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 10px;
+    box-shadow: 0 10px 10px #d7e1ec;
+    border-radius: 50%;
+  }
+    
+.fa-google {
+    color: black;
+  }
+
+.fa-linkedin {
+    color: black;
+}
+
+.fa-github {
+    color: black
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.fa:hover {
+    color: white;
+}
+
+.fa-google:hover{
+    background: #dd4b39;
+}
+
+.fa-linkedin:hover{
+    background: #007bb5;
+}
+
+.fa-github:hover{
+    background: black;
+}

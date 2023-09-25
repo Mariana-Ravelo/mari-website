@@ -3,9 +3,9 @@ export default function Navbar() {
     return <nav className="nav">
     <Link to="/" className="site-title">Mariana Ravelo</Link>
     <ul>
+        <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/projects">Projects</CustomLink>
-        <CustomLink to="/contact">Contact</CustomLink>
     </ul>
     </nav>
 }
