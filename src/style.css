@@ -12,6 +12,7 @@ body {
     text-align: center;
 }
 
+/* Navbar styling */
 .nav {
     background-color: rgb(60, 97, 109);
     color: white;
@@ -52,6 +53,7 @@ body {
     background-color: #777;
 }
 
+/* Footer styling */
 .footer {
     position: fixed;
     left: 0;
@@ -104,4 +106,42 @@ body {
 
 .fa-github:hover{
     background: black;
+}
+
+.cvBtton{
+   top: 50%;
+   background-color: rgb(60, 97, 109);
+   color: white;
+   border: none;
+   border-radius: 10%;
+   padding:10px;
+   min-height:10px; 
+   min-width: 10px;
+   box-shadow: 0 10px 10px rgb(119, 144, 152);
+}
+
+.cvBtton:hover {
+    background-color: #777;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 500px;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item-2 {
+    grid-row: span 2;
+
+}
+
+.myPic {
+    height: 200px;
+    width: 170px;
+    border-radius: 10%;
+    box-shadow: 0 10px 10px #b7d2ee;
+    border: 5px solid #9aacc0; 
+    
 }
