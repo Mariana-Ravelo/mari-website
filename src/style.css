@@ -125,8 +125,11 @@ body {
 }
 
 .grid-container {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: grid;
-    grid-template-columns: 300px 500px;
+    grid-template-columns: 2fr 3fr;
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
@@ -134,7 +137,6 @@ body {
 
 .grid-item-2 {
     grid-row: span 2;
-
 }
 
 .myPic {
@@ -143,5 +145,21 @@ body {
     border-radius: 10%;
     box-shadow: 0 10px 10px #b7d2ee;
     border: 5px solid #9aacc0; 
-    
+    margin: 20px 20px;
+}
+
+/* Styling about page */
+.flex-container {
+    display: flex; 
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex-1 {
+    justify-self: flex-start;
+}
+
+.flex-2 {
+    display: inline-flex;
 }
