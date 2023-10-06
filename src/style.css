@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background: linear-gradient(to left, #ffffff, #d7e1ec);
+    font-family: Garamond, serif;
 }
 
 .container {
@@ -133,6 +134,7 @@ body {
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
+    grid-auto-flow: row;
 }
 
 .grid-item-2 {
@@ -146,6 +148,16 @@ body {
     box-shadow: 0 10px 10px #b7d2ee;
     border: 5px solid #9aacc0; 
     margin: 20px 20px;
+}
+
+.grid-item-4 {
+    grid-column: span 2;
+    justify-self: start;
+}
+
+.grid-item-5 {
+    grid-column: span 2;
+    display: inline-flex;
 }
 
 /* Styling about page */
@@ -162,4 +174,8 @@ body {
 
 .flex-2 {
     display: inline-flex;
+}
+
+h2 {
+    text-align: justify;
 }

@@ -11,16 +11,21 @@ function Home() {
             </div>
             <div class="grid-item grid-item-2">
                 <h1>Hello, I'm Mariana</h1>
-                <h2>A Master of Physics graduate in Space Science and Robotics looking forward to apply my knowledge
-                    of astrophysics and robotic simulations, while developing my skills. I have a keen interest in space robotics
-                    and I'm enthusiastic to get involved with the space industry.
+                <h2>A Master of Physics graduate in Space Science and Robotics.
                 </h2>
-               
             </div>
             <div class="grid-item grid-item-3">
                 <button onClick={onBttonClick} class="cvBtton">My CV</button>
             </div>
-
+            <div class="grid-item grid-item-4">
+                <h2>Skills and Interests:</h2>
+            </div>
+            <div class="grid-item grid-item-5">
+                <h3>Robotic Simulations</h3>
+                <h3>Theoretical Physics Simulations</h3>
+                <h3>Microcontroller Programming</h3>
+                <h3>Web Development</h3>
+            </div>
         </div>
         
     );
