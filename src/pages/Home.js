@@ -18,16 +18,16 @@ function Home() {
                 <button onClick={onBttonClick} class="cvBtton">My CV</button>
             </div>
             <div class="grid-item grid-item-4">
-                <h2>Skills and Interests:</h2>
-            </div>
-            <div class="grid-item grid-item-5">
-                <h3>Robotic Simulations</h3>
-                <h3>Theoretical Physics Simulations</h3>
-                <h3>Microcontroller Programming</h3>
-                <h3>Web Development</h3>
+                <div class="flexbox-skills">
+                    <div class="rob-sim">
+                        <h2>Robotic Simulations</h2>
+                    </div>
+                    <div class="rob-sim">
+                        <h2>Robotic Simulations</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        
     );
 };
 
