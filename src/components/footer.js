@@ -10,7 +10,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/mariana-ravelo-guedez/" class="fa fa-linkedin" target="_blank" rel="noreferrer"></a>
                 <a href="https://github.com/Mariana-Ravelo" class="fa fa-github" target="_blank" rel="noreferrer"></a>
             </div>
-        </footer>
+        </footer> 
     );
 };
 

@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    background-color: #c5fde7;
-    font-family: Garamond, serif;
+    background-color: white;
+    font-family: 'Montserrat';
 }
 
 .container {
@@ -15,8 +15,8 @@ body {
 
 /* Navbar styling */
 .nav {
-    background-color: #536b62;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -47,11 +47,12 @@ body {
 }
 
 .nav li.active {
-    color: #c5fde7;
+    text-decoration: underline;
+    text-decoration-color: rgb(16, 89, 163);
 }
 
 .nav li:hover {
-    background-color: #81aa99;
+    background-color: rgb(121, 166, 198);
 }
 
 /* Footer styling */
@@ -60,9 +61,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #c5fde7;
+    background-color: rgb(16, 89, 163);
     color: black;
     text-align: center;
+    color: white;
 }
 
 .fa {
@@ -73,85 +75,107 @@ body {
     text-align: center;
     text-decoration: none;
     margin: 20px 10px;
-    background-color: white;
+    background-color: rgb(1, 98, 171);
     border-radius: 50%;
+    color: white;
   }
-    
-.fa-google {
-    color: black;
-  }
-
-.fa-linkedin {
-    color: black;
-}
-
-.fa-github {
-    color: black
-}
 
 .wrapper{
     display: inline-flex;
 }
 
 .fa:hover {
-    color: white;
-    background-color: #536b62;
+    background-color: rgb(121, 166, 198);
 }
 
 .cvBtton{
    top: 50%;
-   background-color: #536b62;
+   background-color: rgb(16, 89, 163);
    color: white;
    border: none;
    padding:10px;
    min-height:10px; 
    min-width: 10px;
+   margin: 10px;
+   font-family: 'Montserrat';
 }
 
 .cvBtton:hover {
-    background-color: #81aa99;
-}
-
-.grid-container {
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
-    grid-auto-flow: row;
-}
-
-.grid-item-2 {
-    grid-row: span 2;
+    background-color: rgb(121, 166, 198);
 }
 
 .myPic {
     height: 200px;
     width: 170px;
     box-shadow: 0 10px 10px #536b62;
-    border: 3px solid #536b62; 
-    margin: 20px 20px;
+    border: 3px solid rgb(16, 89, 163); 
+    margin-top: 20px;
 }
 
-.grid-item-4 {
-    grid-column: span 2;
-    justify-self: start;
-}
-
-.flexbox-skills {
+/* Styling home page */
+.home-container {
     display: flex; 
-    flex-flow: row wrap;
     text-align: center;
+    align-content: flex-start;
+    gap: 1px;
+    margin: 100px;
+    margin-bottom: 50px;
 }
 
-.flex-container-skills > * {
-    padding: 10px;
-    margin: 10px;
+.home-container > * {
     flex: 1 100%;
     border-radius: 10px;
+}
+
+.home-pic-cv {
+    flex-direction: column;
+}
+
+.home-description {
+    margin-left: -100px;
+}
+
+/* Scroll down animation */
+.scroll-button {
+    position: absolute;
+    text-align: center;
+    background: white;
+    border: none;
+    font-size: 40px;
+    color: rgb(16, 89, 163);
+    overflow: hidden;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.scroll-button:after {
+    content: " ";
+    position: absolute;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+/* Styling skills home page */
+.skills-container {
+    display: flex; 
+    text-align: start;
+    gap: 50px;
+    margin: 20px 50px;
+}
+
+.skills-container > * {
+    flex: 1 100%;
+    background-color: rgb(121, 166, 198);
 }
 
 /* Styling about page */
@@ -159,26 +183,28 @@ body {
     display: flex; 
     text-align: center;
     align-content: flex-start;
-    gap: 1px;
+    gap: 10px;
 }
 
 .about-container > * {
-    padding: 50px;
-    margin: 50px;
+    padding: 10px;
+    margin-top: 30px;
     flex: 1 100%;
     border-radius: 10px;
 }
 
 .about-description {
-    margin-right: -80px;
+    margin-left: 100px;
+    text-align: justify;
 }
 
 .about-pic {
-    margin-left: -80px;
+    margin-right: 150px;
 }
 
 h3 {
-    font-weight:normal;
-    text-align: justify;
+    font-weight: normal;
 }
+
+
 

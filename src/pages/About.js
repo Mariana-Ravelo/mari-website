@@ -4,7 +4,6 @@ function About() {
     return (
         <>
             <h1>About me</h1> 
-            <hr></hr>
             <div class="about-container">
                 <div class="about-description">
                     <h3>I’m a recent <b>master’s graduate</b> from Aberystwyth University now based in London.</h3>
