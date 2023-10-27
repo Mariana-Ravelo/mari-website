@@ -50,19 +50,27 @@ export default function BasicTabs() {
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="skill tabs">
-                    <Tab label="Item One" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
-                    <Tab label="Item Three" {...a11yProps(2)} />
+                    <Tab label="Top Skills" {...a11yProps(0)} />
+                    <Tab label="Robotic Simulations" {...a11yProps(1)} />
+                    <Tab label="Website Development" {...a11yProps(2)} />
+                    <Tab label="Microcontroller Programming" {...a11yProps(3)} />
+                    <Tab label="Theoretical Physics Simulations" {...a11yProps(4)} />
                 </Tabs>
             </Box>
             <SkillsTabPanel value={value} index={0}>
-                Item One
+                top skils
             </SkillsTabPanel>
             <SkillsTabPanel value={value} index={1}>
-                Item Two
+                rob sim
             </SkillsTabPanel>
             <SkillsTabPanel value={value} index={2}>
-                Item Three
+                web dev
+            </SkillsTabPanel>
+            <SkillsTabPanel value={value} index={3}>
+                micro
+            </SkillsTabPanel>
+            <SkillsTabPanel value={value} index={4}>
+                phys sim
             </SkillsTabPanel>
         </Box>
     );
