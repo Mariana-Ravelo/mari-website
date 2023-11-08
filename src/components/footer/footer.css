@@ -1,0 +1,32 @@
+/* Footer styling */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(16, 89, 163);
+    color: black;
+    text-align: center;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 10px;
+    background-color: rgb(1, 98, 171);
+    border-radius: 50%;
+    color: white;
+  }
+
+.wrapper{
+    display: inline-flex;
+}
+
+.fa:hover {
+    background-color: rgb(121, 166, 198);
+}

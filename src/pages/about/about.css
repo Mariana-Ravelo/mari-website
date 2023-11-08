@@ -1,0 +1,27 @@
+/* Styling about page */
+.about-container {
+    display: flex; 
+    text-align: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.about-container > * {
+    padding: 10px;
+    margin-top: 30px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.about-description {
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.about-pic {
+    margin-right: 150px;
+}
+
+h3 {
+    font-weight: normal;
+}

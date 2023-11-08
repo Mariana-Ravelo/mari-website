@@ -1,9 +1,10 @@
 import React from "react";
-import {useRef} from 'react';
+import {useRef} from "react";
 import {FaAngleDown} from "react-icons/fa";
-import MariCV from "../assets/MariCV.pdf";
-import myPic from "../assets/mari.jpg";
+import MariCV from "../../assets/MariCV.pdf";
+import myPic from "../../assets/mari.jpg";
 import Tabs from './Tabs';
+import "./home.css"
 
 function Home() { 
     console.log(myPic); 
@@ -28,7 +29,7 @@ function Home() {
                     </div>
                     <div className="home-description">
                         <h1>Hello, I'm Mariana</h1>
-                        <h2>A Master of Physics graduate in Space Science and Robotics.</h2>
+                        <h2>A Master of Physics graduate in Space Science and Robotics. </h2>
                     </div>
 
                 </div>

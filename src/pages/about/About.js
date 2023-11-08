@@ -1,4 +1,5 @@
-import myPic from "../assets/mari.jpg";
+import myPic from "../../assets/mari.jpg";
+import "./about.css"
 
 function About() {
     return (
