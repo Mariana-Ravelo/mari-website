@@ -22,6 +22,9 @@ import {FaC} from 'react-icons/fa6';
 import {FaCode} from 'react-icons/fa';
 import arduino from "../../logos/arduino.png";
 
+// physics 
+import {FaRocket, FaDesktop} from 'react-icons/fa'
+
 
 function SkillsTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -114,7 +117,11 @@ export default function BasicTabs() {
                 </div>
             </SkillsTabPanel>
             <SkillsTabPanel value={value} index={4}>
-                visualization, special relativity, matplotlib
+                <div className="skills-container phys-sim">
+                    <div className="skills-icon rocket"><FaRocket /> Special Relativity</div>
+                    <div className="skills-icon computer"><FaDesktop /> Data Visualization</div>
+                    <div className="skills-icon matplotlib"><FaChartBar /> Matplotlib</div>
+                </div>
             </SkillsTabPanel>
         </Box>
     );
