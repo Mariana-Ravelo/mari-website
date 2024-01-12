@@ -11,12 +11,16 @@ function Home() {
 
     const onBttonClick = () => {
         window.open(MariCV, '_blank', 'noopener')
-    }
+    };
 
     const ref = useRef(null);
     
     const scrollDownClick = () => {
         ref.current?.scrollIntoView({behaviour: 'smooth'});
+    };
+
+    const backToTop = () => {
+        window.scrollTo(0,0);
     };
 
     return (
@@ -45,11 +49,13 @@ function Home() {
                 <div className="tabs-container">
                     <Tabs />
                 </div>
+                <div className="back-to-top-btn">
+                    <button onClick={backToTop} class="backtotopbtn" >Back to top</button>
+                </div>  
                 
             </div>
 
-
-            <div style={{ height: '50rem' }} />
+            <div style={{ height: '10rem' }} />
             
         </div>
 

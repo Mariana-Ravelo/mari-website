@@ -54,6 +54,10 @@
   color: rgb(16, 89, 163);
   overflow: hidden;
   animation: jumpInfinite 1.5s infinite;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .scroll-button:hover {
@@ -83,7 +87,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 70vh;
 }
 
 .tabs-container {
@@ -96,6 +99,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-family: "Montserrat";
+  min-height: 35vh;
 }
 
 .skills-icon {
@@ -116,6 +121,24 @@
 }
 
 .arduino {
-  width: 35px;
+  width: 45px;
   height: auto;
+  margin-top: 6px;
+}
+
+.backtotopbtn {
+  color: rgb(16, 89, 163);;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  min-height: 10px;
+  min-width: 10px;
+  margin-top: 75px;
+  font-family: "Montserrat";
+}
+
+.backtotopbtn:hover {
+  cursor: pointer;
 }
