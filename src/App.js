@@ -8,16 +8,22 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
   <>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
-    <Navbar />
-    <div className="container">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-    </div>
-    <Footer/>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
+    </head>
+    <body>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+      <Footer/>
+    </body>
+
   </>
   )
 }
