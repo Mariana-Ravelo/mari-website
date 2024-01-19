@@ -18,6 +18,8 @@ function About() {
                     <img src={myPic} alt="me" class="myPic" />
                 </div>
             </div>
+
+            <div style={{ height: '10rem' }} />
         </>
     )
 }
